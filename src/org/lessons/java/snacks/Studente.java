@@ -44,10 +44,8 @@ public class Studente {
         }
     }
 
-    public void getAllInformations() {
-        System.out.printf("Studente: %s %s, %s anni",
-                this.nome,
-                this.cognome,
-                this.età);
+    public String getAllInformations() {
+        String output = String.format("Studente: %s %s, %d", this.nome, this.cognome, this.età);
+        return output;
     }
 }
